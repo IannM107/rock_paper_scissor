@@ -1,0 +1,139 @@
+/* Importa a fonte Poppins do Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+/* Define estilos globais para todos os elementos */
+* {
+  margin: 0;                         /* Remove margens */
+  padding: 0;                        /* Remove espaçamentos internos */
+  box-sizing: border-box;            /* Define como o navegador calcula o tamanho dos elementos */
+  font-family: "Poppins", sans-serif;/* Define a fonte padrão para todos os elementos */
+}
+
+/* Estilos para o corpo da página */
+body {
+  height: 100vh;                    /* Define a altura como 100% da altura da janela do navegador */
+  display: flex;                    /* Usa flexbox para alinhar e justificar os elementos */
+  align-items: center;              /* Centraliza verticalmente */
+  justify-content: center;          /* Centraliza horizontalmente */
+  background: #f6f7fb;              /* Define a cor de fundo do corpo */
+}
+
+/* Define a cor e a cor de fundo do texto selecionado */
+::selection {
+  color: #fff;                     /* Cor do texto selecionado */
+  background-color: #7d2ae8;       /* Cor de fundo do texto selecionado */
+}
+
+/* Estilos para o container principal */
+.container {
+  padding: 2rem 7rem;               /* Define espaçamento interno */
+  border-radius: 14px;              /* Arredonda os cantos */
+  background: #fff;                /* Define a cor de fundo */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Aplica uma sombra ao redor do container */
+}
+
+/* Estilos para as imagens de resultado */
+.result_images {
+  display: flex;                   /* Alinha as imagens horizontalmente */
+  column-gap: 7rem;                /* Define o espaço entre as colunas */
+}
+
+/* Estilos de animação para o resultado do usuário */
+.container.start .user_result {
+  transform-origin: left;          /* Ponto inicial da transformação */
+  animation: userShake 0.7s ease infinite; /* Aplica uma animação contínua chamada userShake */
+}
+
+/* Define a animação userShake */
+@keyframes userShake {
+  50% {
+    transform: rotate(10deg);      /* Rotação de 10 graus no meio da animação */
+  }
+}
+
+/* Estilos de animação para o resultado do computador */
+.container.start .cpu_result {
+  transform-origin: right;         /* Ponto inicial da transformação */
+  animation: cpuShake 0.7s ease infinite; /* Aplica uma animação contínua chamada cpuShake */
+}
+
+/* Define a animação cpuShake */
+@keyframes cpuShake {
+  50% {
+    transform: rotate(-10deg);     /* Rotação de -10 graus no meio da animação */
+  }
+}
+
+/* Define o tamanho das imagens de resultado */
+.result_images img {
+  width: 100px;                    /* Largura das imagens */
+}
+
+/* Rotação para a imagem de resultado do usuário */
+.user_result img {
+  transform: rotate(90deg);        /* Rotação de 90 graus */
+}
+
+/* Rotação para a imagem de resultado do computador */
+.cpu_result img {
+  transform: rotate(-90deg) rotateY(180deg); /* Rotação de -90 graus e rotação de 180 graus no eixo Y */
+}
+
+/* Estilos para o texto de resultado */
+.result {
+  text-align: center;              /* Centraliza o texto horizontalmente */
+  font-size: 2rem;                 /* Define o tamanho da fonte */
+  color: #7d2ae8;                  /* Define a cor do texto */
+  margin-top: 1.5rem;              /* Espaçamento acima do texto */
+}
+
+/* Define o tamanho das imagens das opções */
+.option_image img {
+  width: 50px;                     /* Largura das imagens */
+}
+
+/* Estilos para as opções de jogo */
+.option_images {
+  display: flex;                   /* Alinha os itens horizontalmente */
+  align-items: center;             /* Alinha os itens verticalmente no centro */
+  margin-top: 2.5rem;              /* Espaçamento acima das opções */
+  justify-content: space-between; /* Distribui espaço igualmente entre os itens */
+}
+
+/* Estilos para o container quando o jogo começar */
+.container.start .option_images {
+    pointer-events: none;            /* Desativa a interatividade */
+  }
+  
+  /* Estilos para cada imagem de opção */
+  .option_image {
+    display: flex;                   /* Usa flexbox para alinhar o conteúdo */
+    flex-direction: column;          /* Organiza o conteúdo em colunas */
+    align-items: center;             /* Centraliza horizontalmente */
+    opacity: 0.5;                    /* Torna a opção semi-transparente */
+    cursor: pointer;                 /* Muda o cursor para o modo de seleção */
+    transition: opacity 0.3s ease;  /* Efeito suave ao alterar a opacidade */
+  }
+  
+  /* Efeito ao passar o mouse sobre uma opção */
+  .option_image:hover {
+    opacity: 1;                      /* Torna a opção totalmente opaca */
+  }
+  
+  /* Estilos para a opção selecionada */
+  .option_image.active {
+    opacity: 1;                      /* Torna a opção totalmente opaca */
+  }
+  
+  /* Desativa a interatividade das imagens e textos dentro das opções */
+  .option_image img, .option_image p {
+    pointer-events: none;            /* Desativa a interatividade */
+  }
+  
+  /* Estilos para o texto das opções */
+  .option_image p {
+    color: #7d2ae8;                  /* Define a cor do texto */
+    font-size: 1.235rem;             /* Define o tamanho da fonte */
+    margin-top: 1rem;                /* Espaçamento acima do texto */
+    pointer-events: none;            /* Desativa a interatividade */
+  }
