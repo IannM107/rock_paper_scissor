@@ -31,15 +31,15 @@ Contributions are always welcome!
 
 Fork: Fork this repository.
 New Branch: Create a branch with your changes:
-
+```bash
 git checkout -b my-new-feature 
 
 Commit: Save your changes:
-
+```bash
 git commit -m 'Add a new feature'
 
 Push: Send to the branch:
-
+```bash
 git push origin my-new-feature
 
 Pull Request: On GitHub, open a Pull Request for this repository.
