@@ -21,7 +21,7 @@ A simple and interactive rendition of the classic game "Rock, Paper, Scissors," 
 
 1. **Clone the repository:**
    ```bash
-   git clone link-to-your-github-repository-here
+   git clone rock_paper_scissor
 
 Access the folder: Navigate to the project folder.
 Play: Open the index.html file in your browser and start playing!
@@ -30,16 +30,17 @@ Play: Open the index.html file in your browser and start playing!
 Contributions are always welcome!
 
 Fork: Fork this repository.
-New Branch: Create a branch with your changes:
-```bash
-git checkout -b my-new-feature 
-
-Commit: Save your changes:
-```bash
-git commit -m 'Add a new feature'
-
-Push: Send to the branch:
-```bash
-git push origin my-new-feature
+**New Branch: Create a branch with your changes:**
+   ```bash
+   git checkout -b my-new-feature 
+  ```
+**Commit: Save your changes:**
+   ```bash
+   git commit -m 'Add a new feature'
+   ```
+**Push: Send to the branch:**
+   ```bash
+   git push origin my-new-feature
+  ```
 
 Pull Request: On GitHub, open a Pull Request for this repository.
