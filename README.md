@@ -1,0 +1,45 @@
+# Rock, Paper, Scissors Game
+
+A simple and interactive rendition of the classic game "Rock, Paper, Scissors," built using HTML, CSS, and Vanilla JavaScript.
+
+![principal](https://github.com/IannM107/rock_paper_scissor/blob/main/principal.PNG?raw=true)
+
+## Features
+
+- **User-Friendly Interface:** An intuitive and easy-to-use interface.
+- **Computerized Opponent:** Play against a computer-controlled opponent that makes random choices.
+- **Smooth Animations:** Animation effects for a pleasant user experience.
+- **Responsive Design:** Adapts well to devices of various sizes.
+
+## How to Play
+
+1. **Choose:** Select from "Rock," "Paper," or "Scissors."
+2. **Play:** Click on your choice and wait for the result.
+3. **Result:** The game will automatically determine the winner based on your choice and the computer's random choice.
+
+## Installation and Usage
+
+1. **Clone the repository:**
+   ```bash
+   git clone link-to-your-github-repository-here
+
+Access the folder: Navigate to the project folder.
+Play: Open the index.html file in your browser and start playing!
+
+## Contributions
+Contributions are always welcome!
+
+Fork: Fork this repository.
+New Branch: Create a branch with your changes:
+
+git checkout -b my-new-feature 
+
+Commit: Save your changes:
+
+git commit -m 'Add a new feature'
+
+Push: Send to the branch:
+
+git push origin my-new-feature
+
+Pull Request: On GitHub, open a Pull Request for this repository.
