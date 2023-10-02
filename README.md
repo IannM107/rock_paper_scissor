@@ -12,19 +12,10 @@ A simple and interactive rendition of the classic game "Rock, Paper, Scissors," 
 - **Responsive Design:** Adapts well to devices of various sizes.
 
 ## How to Play
-
+0. [Click here](https://iannm107.github.io/rock_paper_scissor/index.html) 
 1. **Choose:** Select from "Rock," "Paper," or "Scissors."
 2. **Play:** Click on your choice and wait for the result.
 3. **Result:** The game will automatically determine the winner based on your choice and the computer's random choice.
-
-## Installation and Usage
-
-1. **Clone the repository:**
-   ```bash
-   git clone rock_paper_scissor
-
-Access the folder: Navigate to the project folder.
-Play: Open the index.html file in your browser and start playing!
 
 ## Contributions
 Contributions are always welcome!
